@@ -1,0 +1,48 @@
+$hexagon-width: toRelativeUnit(50px);
+$hexagon-height: toRelativeUnit(43px);
+
+$hexagon-width-highlite: toRelativeUnit(65px);
+$hexagon-height-highlite: toRelativeUnit(55.9px);
+
+$hexagon-width-small: toRelativeUnit(25px);
+$hexagon-height-small: toRelativeUnit(21.5px);
+
+$hexagon-width-medium: toRelativeUnit(80px);
+$hexagon-height-medium: toRelativeUnit(69px);
+
+$hexagon-width-big: toRelativeUnit(120px);
+$hexagon-height-big: toRelativeUnit(100px);
+
+.hexagon {
+    display: inline-block;
+    width: $hexagon-width;
+    height: $hexagon-height;
+    background-color: $ca-color-foreground-light-90;
+    -webkit-mask-image: url('/assets/ui/hexagon.svg');
+    mask-image: url('/assets/ui/hexagon.svg');
+    mask-size: $hexagon-width $hexagon-height;
+
+    &.highlite {
+        width: $hexagon-width-highlite;
+        height: $hexagon-height-highlite;
+        mask-size: $hexagon-width-highlite $hexagon-height-highlite;
+    }
+
+    &.small {
+        width: $hexagon-width-small;
+        height: $hexagon-height-small;
+        mask-size: $hexagon-width-small $hexagon-height-small;
+    }
+
+    &.medium {
+        width: $hexagon-width-medium;
+        height: $hexagon-height-medium;
+        mask-size: $hexagon-width-medium $hexagon-height-medium;
+    }
+
+    &.large {
+        width: $hexagon-width-big;
+        height: $hexagon-height-big;
+        mask-size: $hexagon-width-big $hexagon-height-big;
+    }
+}

@@ -1,0 +1,44 @@
+@mixin _text-format($font-size, $font-weight, $line-height, $font-family) {
+    font-size: $font-size;
+    font-weight: $font-weight;
+    line-height: $line-height;
+    font-family: $font-family;
+}
+
+@mixin _text-format-shorthand($font-size, $font-weight, $line-height, $font-family) {
+    // If any of the values are set to `inherit`, we can't use the shorthand
+    // so we fall back to passing in the individual properties.
+    @if (
+        $font-size ==
+            inherit or
+            $font-weight ==
+            inherit or
+            $line-height ==
+            inherit or
+            $font-family ==
+            inherit or
+            $font-size ==
+            null or
+            $font-weight ==
+            null or
+            $line-height ==
+            null or
+            $font-family ==
+            null
+    ) {
+        @include _text-format($font-size, $font-weight, $line-height, $font-family);
+    } @else {
+        // Otherwise use the shorthand `font`, because it's the least amount of bytes.
+        font: $font-weight #{$font-size} / #{$line-height} $font-family;
+    }
+}
+
+@mixin text-format($level) {
+    $font-size: font-size($level);
+    $font-weight: font-weight($level);
+    $line-height: line-height($level);
+    $font-family: font-family($level);
+
+    @include _text-format-shorthand($font-size, $font-weight, $line-height, $font-family);
+    letter-spacing: letter-spacing($level);
+}

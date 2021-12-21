@@ -1,0 +1,15 @@
+.badge {
+	display: inline-block;
+	padding: $spacing-xs $spacing-md;
+    @include text-format(caption);
+    font-weight: 600;
+    color: $ca-color-background;
+    background-color: $ca-color-foreground;
+	border: 1px solid $ca-color-foreground;
+	border-radius: 1em;
+
+	&.badge-brand {
+		border-color: $ca-color-brand;
+		background-color: $ca-color-brand;
+	}
+}

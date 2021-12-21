@@ -1,0 +1,5 @@
+@mixin addTheme($color-palette) {
+    @each $color, $color-code in $color-palette {
+        --ca-color-#{$color}: #{$color-code};
+    }
+}

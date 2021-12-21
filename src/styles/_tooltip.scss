@@ -1,0 +1,86 @@
+@import 'mixins/typography';
+
+.tooltip {
+  position: relative;
+
+  &::after {
+    background: rgba(#000, .95);
+    border-radius: $border-radius;
+    bottom: 100%;
+    color: $ca-color-background;
+    content: attr(data-tooltip);
+    display: block;
+    @include text-format(default-semi-bold);
+    left: 50%;
+    max-width: toRelativeUnit(300px);
+    opacity: 0;
+    overflow: hidden;
+    padding: $spacing-sm;
+    pointer-events: none;
+    position: absolute;
+    text-overflow: ellipsis;
+    transform: translate(-50%, $spacing-sm);
+    transition: opacity .2s, transform .2s;
+    white-space: pre;
+    z-index: 9999;
+  }
+
+  &:focus,
+  &:hover {
+    &::after {
+      opacity: 1;
+      transform: translate(-50%, -$spacing-sm);
+    }
+  }
+
+  &[disabled],
+  &.disabled {
+    pointer-events: auto;
+  }
+
+  &.tooltip-right {
+    &::after {
+      bottom: 50%;
+      left: 100%;
+      transform: translate(-$spacing-sm, 50%);
+    }
+
+    &:focus,
+    &:hover {
+      &::after {
+        transform: translate($spacing-sm, 50%);
+      }
+    }
+  }
+
+  &.tooltip-bottom {
+    &::after {
+      bottom: auto;
+      top: 100%;
+      transform: translate(-50%, -$spacing-md);
+    }
+
+    &:focus,
+    &:hover {
+      &::after {
+        transform: translate(-50%, $spacing-sm);
+      }
+    }
+  }
+
+  &.tooltip-left {
+    &::after {
+      bottom: 50%;
+      left: auto;
+      right: 100%;
+      transform: translate($spacing-md, 50%);
+    }
+
+    &:focus,
+    &:hover {
+      &::after {
+        transform: translate(-$spacing-sm, 50%);
+      }
+    }
+  }
+}

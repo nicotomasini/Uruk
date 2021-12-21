@@ -1,0 +1,66 @@
+$checkbox-width: toRelativeUnit(20px);
+
+input[type=checkbox] {
+    position: absolute; // take it out of document flow
+    opacity: 0; // hide it
+  
+    & + label {
+      position: relative;
+      cursor: pointer;
+      padding: 0;
+    }
+  
+    // Box
+    & + label:before {
+      content: '';
+      margin-right: $spacing-md;
+      display: inline-block;
+      vertical-align: text-top;
+      width: $checkbox-width;
+      height: $checkbox-width;
+      border: 1px solid $ca-color-brand-button;
+      background-color: $ca-color-background;
+    }
+  
+    // Box focus
+    &:focus + label:before  {
+      box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+    }
+  
+    // Box checked
+    &:checked + label:before {
+      background-color: $ca-color-brand-button;
+      color: $ca-color-background;
+    }
+    
+    // Disabled state label
+    &:disabled + label {
+      color: #b8b8b8;
+      cursor: auto;
+    }
+  
+    // Disabled box
+    &:disabled + label:before {
+      box-shadow: none;
+      background: #ddd;
+    }
+  
+    // Checkmark. Could be replaced with an image
+    &:checked + label:after {
+      content: '';
+      position: absolute;
+      left: 4px;
+      top: 9px;
+      background: white;
+      width: 2px;
+      height: 2px;
+      box-shadow: 
+        2px 0 0 $ca-color-background,
+        4px 0 0 $ca-color-background,
+        4px -2px 0 $ca-color-background,
+        4px -4px 0 $ca-color-background,
+        4px -6px 0 $ca-color-background,
+        4px -8px 0 $ca-color-background;
+      transform: rotate(45deg);
+    }
+}

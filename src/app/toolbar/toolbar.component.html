@@ -1,0 +1,26 @@
+<div class="toolbar">
+    <div class="nav-toggle">
+        <a (click)="toggleNav()" class="icon-only">
+            <fa-icon [icon]="['fal', 'bars']" *ngIf="!showNav"></fa-icon>
+            <fa-icon [icon]="['fal', 'times']" *ngIf="showNav"></fa-icon>
+        </a>
+    </div>
+    <h2 class="title-area">
+        <ng-container *ngIf="pageConfig">{{
+            'features.' + pageConfig.title | translate
+        }}</ng-container>
+    </h2>
+    <div class="settings-area" *ngIf="showLanguageSwitch">
+        <form>
+            <select
+                [formControl]="languageControl"
+                name="languages"
+                title="{{ 'languages.languageSetting' | translate }}"
+            >
+                <option *ngFor="let lang of languages" [value]="lang">
+                    {{ 'languages.' + lang | translate }}
+                </option>
+            </select>
+        </form>
+    </div>
+</div>

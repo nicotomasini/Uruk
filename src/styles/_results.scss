@@ -1,0 +1,82 @@
+@import 'variables';
+
+.row-detail-toggle {
+    > span {
+        margin-right: $spacing-sm;
+    }
+}
+
+.color-info {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .hexagon {
+        margin-right: $spacing-md;
+    }
+}
+
+.latest-score {
+    display: flex;
+    align-items: center;
+
+    .value {
+        width: 24px;
+        display: inline-flex;
+        justify-content: center;
+    }
+
+    fa-icon {
+        &.asc {
+            color: $ca-color-state-success;
+        }
+
+        &.desc {
+            color: $ca-color-state-error;
+        }
+    }
+}
+
+.text-results {
+    height: 100%;
+    overflow-y: auto;
+
+    .text-result {
+        margin-bottom: $spacing-lg;
+    }
+}
+
+.datatable-row-detail {
+    padding: $spacing-lg;
+}
+
+.ngx-datatable.bootstrap {
+    .datatable-header .datatable-header-row .datatable-header-cell,
+    .datatable-body .datatable-body-row .datatable-body-cell {
+        &.hide-mobile {
+            display: inherit;
+            @media #{$mediaquery-sm-down} {
+                display: none;
+            }
+        }
+    }
+
+    .datatable-body .datatable-body-row .datatable-body-cell {
+        &.right {
+            display: flex;
+            justify-content: end;
+        }
+    }
+}
+
+.tooltip-container {
+    padding: $spacing-sm;
+
+    .value {
+        font-weight: 600;
+    }
+}
+
+ngx-charts-legend {
+    margin-top: $spacing-lg;
+}

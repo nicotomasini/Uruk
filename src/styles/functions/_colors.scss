@@ -1,0 +1,13 @@
+@function getThemeColor($theme, $color-name) {
+    @return map-get($theme, $color-name);
+}
+
+@function ca-darken($color-name, $percentage) {
+    // TODO: make theme dynamic
+    @return darken(getThemeColor($light-theme-palette, $color-name), $percentage);
+}
+
+@function ca-lighten($color-name, $percentage) {
+    // TODO: make theme dynamic
+    @return lighten(getThemeColor($light-theme-palette, $color-name), $percentage);
+}

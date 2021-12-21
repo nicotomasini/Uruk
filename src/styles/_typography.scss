@@ -1,0 +1,58 @@
+// Typography
+// Headings
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: inherit;
+    margin: 0;
+}
+
+h1,
+.h1 {
+    @include text-format(h1);
+}
+h2,
+.h2 {
+    @include text-format(h2);
+}
+h3,
+.h3 {
+    @include text-format(h3);
+}
+h4,
+.h4 {
+    @include text-format(h4);
+}
+h5,
+.h5 {
+    @include text-format(meta);
+    text-transform: uppercase;
+    color: $ca-color-brand;
+}
+h6,
+.h6 {
+    @include text-format(h6);
+}
+
+// Paragraphs
+p {
+    @include text-format(default);
+    font-size: toRelativeUnit(14px);
+    margin: 0;
+    margin-bottom: $spacing-sm;
+}
+
+.caption {
+    @include text-format(caption);
+}
+
+.highlight {
+    @include text-format(highlight);
+}
+
+.highlight-small {
+    @include text-format(highlight-small);
+}

@@ -1,0 +1,34 @@
+// Angular
+@import '~@angular/cdk/overlay-prebuilt.css';
+
+// Functions
+@import 'functions/colors';
+@import 'functions/typography';
+@import 'functions/metrics';
+
+// Variables
+@import 'color-palette/light-theme-palette';
+@import 'variables';
+
+// Mixins
+@import 'mixins/colors';
+@import 'mixins/typography';
+@import 'mixins/hover';
+@import 'mixins/shadow';
+@import 'mixins/buttons';
+
+// Reset and dependencies
+@import 'normalize';
+@import 'base';
+
+// Elements and components
+@import 'typography';
+@import 'forms';
+@import 'checkbox';
+@import 'buttons';
+@import 'badge';
+@import 'table';
+@import 'results';
+@import 'hexagon';
+@import 'tooltip';
+@import 'swiper';

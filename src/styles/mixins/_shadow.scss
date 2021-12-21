@@ -1,0 +1,3 @@
+@mixin control-shadow($color: $ca-color-brand) {
+    box-shadow: 0 0 0 .1rem rgba($color, .2);
+}

@@ -1,0 +1,18 @@
+<nav id="nav">
+    <div class="logo-area">
+        <img [src]="logoPath" alt="App Logo">
+    </div>
+    <div class="nav-area">
+        <ul class="nav-section" *ngFor="let section of navSections">
+            <li class="nav-item" (click)="closeNav()" *ngFor="let item of section.items" [class.disabled]="item.disabled" [routerLink]="item.route" routerLinkActive="active">
+                <span class="nav-item-icon">
+                    <fa-icon *ngIf="item.faIcon" [icon]="[item.faIcon.prefix, item.faIcon.iconName]" size="lg" class="nav-item-icon"></fa-icon>
+                    <ng-container *ngIf="!item.faIcon && item.iconTemplate" [ngTemplateOutlet]="item.iconTemplate"></ng-container>
+                </span>
+                <span class="nav-item-title">
+                    {{'features.' + item.title | translate}}
+                </span>
+            </li>
+        </ul>
+    </div>
+</nav>

@@ -1,0 +1,24 @@
+.form-control {
+    background: $ca-color-background;
+    border: 1px solid $ca-color-foreground-light-80;
+    border-radius: $border-radius;
+    color: $ca-color-foreground;
+    display: block;
+    height: $form-control-height;
+    padding: 0 $spacing-md;
+    max-width: 100%;
+    transition: background $transition-duration, border $transition-duration,
+        box-shadow $transition-duration, color $transition-duration;
+    width: 100%;
+}
+
+textarea {
+    border-color: $ca-color-foreground-light-80;
+    width: 100%;
+    padding: $spacing-md;
+    resize: vertical;
+}
+
+.form-select {
+    cursor: pointer;
+}

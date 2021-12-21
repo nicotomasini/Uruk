@@ -1,0 +1,288 @@
+{
+    "auth": {
+        "email": "E-Mail",
+        "incompleteForm": "Bitte füllen Sie das Formular vollständig aus.",
+        "incorrectCredentials": "E-Mail Adresse oder Passwort ist ungültig.",
+        "invalidEmail": "Bitte geben Sie eine gültige E-Mail Adresse ein.",
+        "login": "Einloggen",
+        "logout": "Ausloggen",
+        "password": "Passwort",
+        "resetPassword": "Passwort zurücksetzen"
+    },
+    "available": "verfügbar",
+    "branches": {
+        "all": "Alle Standorte",
+        "bregenz": "Bregenz",
+        "dornbirn": "Dornbirn",
+        "stGallen": "St. Gallen",
+        "zurich": "Zürich"
+    },
+    "buttons": {
+        "back": "Zurück",
+        "filter": "Filter",
+        "next": "Weiter",
+        "submitSurvey": "Fragebogen abschließen",
+        "submitGoals": "Verhaltensleitsätze speichern",
+        "submitColors": "Farben speichern"
+    },
+    "change": {
+        "infoText": "Change Fragebogen Info Text.",
+        "infoWidgetTitle": "Was ist der Change Fragebogen?",
+        "surveyDescription": "Bewerten Sie die Fragen des Change Fragebogens basierend auf Ihren Erfahrungen des vergangenen Monats.",
+        "results": "Resultate"
+    },
+    "color": "Farbe",
+    "colors": {
+        "orange": "Orange",
+        "yellow": "Gelb",
+        "green": "Grün",
+        "aqua": "Aqua",
+        "blue": "Blau",
+        "purple": "Violett",
+        "red": "Rot",
+        "orangeBehavior": "Oranges Verhalten",
+        "yellowBehavior": "Gelbes Verhalten",
+        "greenBehavior": "Grünes Verhalten",
+        "aquaBehavior": "Aqua Verhalten",
+        "blueBehavior": "Blaues Verhalten",
+        "purpleBehavior": "Violettes Verhalten",
+        "redBehavior": "Rotes Verhalten",
+        "redBehaviorExamples": "Erfolg, Wettbewerb, Opportunitäten, Pragmatismus, Taktik",
+        "orangeBehaviorExamples": "Erfolg, Wettbewerb, Opportunitäten, Pragmatismus, Taktik",
+        "yellowBehaviorExamples": "Erfolg, Wettbewerb, Opportunitäten, Pragmatismus, Taktik",
+        "greenBehaviorExamples": "Erfolg, Wettbewerb, Opportunitäten, Pragmatismus, Taktik",
+        "aquaBehaviorExamples": "Erfolg, Wettbewerb, Opportunitäten, Pragmatismus, Taktik",
+        "blueBehaviorExamples": "Erfolg, Wettbewerb, Opportunitäten, Pragmatismus, Taktik",
+        "purpleBehaviorExamples": "Erfolg, Wettbewerb, Opportunitäten, Pragmatismus, Taktik"
+    },
+    "content": {
+        "noContent": "Zurzeit gibt es keinen Beitrag",
+        "noContentDescription": "Es gibt zur jetzigen Zeit noch keine Beiträge. Diese werden in Zukunft folgen.",
+        "admin": "Content-Verwaltung",
+        "description": "Beschreibung",
+        "category": "Kategorie",
+        "type": "Type",
+        "title": "Titel",
+        "link": "Link",
+        "imageUrl": "Bild",
+        "attachment": "Dokument",
+        "download": "Herunterladen",
+        "documents": "Dokumente",
+        "links": "Links",
+        "open": "Öffnen",
+        "add": "Erstellen",
+        "update": "Updaten",
+        "cancle": "Abbrechen",
+        "on-cancle": "Wollen Sie wirklich ohne zu beenden das Formular verlassen?",
+        "delete": "Löschen",
+        "edit": "Editieren",
+        "newContent": "Neuer Beitrag",
+        "addAttachment": "Dokument hinzufügen",
+        "editAttachment":"Dokument updaten",
+        "addImage": "Bild hinzufügen",
+        "editImage": "Bild updaten",
+        "confirmDelete": "Wollen Sie diesen Beitrag wirklich löschen?",
+        "createdAt" : "Datum",
+        "categories": {
+            "document": "Dokument",
+            "link": "Link"
+        },
+        "validation": {
+            "noType": "Bitte wählen sie einen Type aus.",
+            "noCategory": "Bitte wählen sie eine  Kategorie aus.",
+            "noTitle": "Bitte füllen sie einen Titel ein.",
+            "noDescription": "Bitte füllen sie eine Beschreibung ein.",
+            "noLinkOrAttachment": "Sie müssen entweder ein Dokument oder einen Link einfügen."
+
+        },
+        "types": {
+            "pdf": "PDF",
+            "word": "Word",
+            "powerpoint": "Power Point",
+            "excel": "Excel",
+            "blog": "Blog",
+            "video": "Video"
+        }
+    },
+    "cultureVibe": {
+        "infoText": "Culture Vibe Info Text.",
+        "infoWidgetTitle": "Was ist Culture Vibe?",
+        "selectColors": "Farben auswählen",
+        "surveyDescription": "Selektieren Sie die 3 dominantesten Farben aus der Culture Map basierend auf Ihren Erfahrungen der vergangenen Woche.",
+        "results": "Resultate"
+    },
+    "departments": {
+        "all": "Alle Abteilungen",
+        "accounting": "Rechnungswesen",
+        "humanResources": "Personal",
+        "sales": "Vertrieb",
+        "marketing": "Marketing"
+    },
+    "employee": "Mitarbeiter",
+    "features": {
+        "home": "Home",
+        "reports": "Berichte",
+        "change": "Change",
+        "changeSurvey": "Change Fragebogen",
+        "content": "Inhalte",
+        "cultureVibe": "Culture Vibe",
+        "goals": "Meine Entwicklung",
+        "goalsSurvey": "Meine Entwicklung Fragebogen",
+        "selectGoals": "Verhaltensleitsätze wählen",
+        "myColors": "MyColors",
+        "myColorsSurvey": "MyColors Fragebogen",
+        "myProfile": "Mein Profil",
+        "admin": "Admin",
+        "contentForm": "Content Formular"
+    },
+    "export": "Exportieren",
+    "forms": {
+        "typeHere": "Hier tippen",
+        "addNote": "Notiz hinzufügen"
+    },
+    "info": "Info",
+    "goals": {
+        "infoText": "Verhaltensleitsätze bewerten Info Text.",
+        "infoWidgetTitle": "Was sind Verhaltensleitsätze?",
+        "goalSelectorInfoText": "Was planen Sie zu verbessern? Wir erstellen einen Fragebogen basierend auf ihren ausgewählten Verhaltensleitsätzen. Sie können bis zu 6 Verhaltensleitsätze wählen, 1 bis 2 pro Farbe.",
+        "numberOfGoalsError": "Es dürfen ingsgesamt nicht mehr als 6 Verhaltensleitsätze selektiert werden",
+        "numberOfGoalsPerColorError": "Es müssen 1 bis 2 Verhaltensleitsätze pro Farbe selektiert werden",
+        "selection": "Auswahl",
+        "sprintTitle": "Sprint {{sprint}} – Woche {{week}}",
+        "surveyDescription": "Bewerten Sie Ihre individuellen Verhaltensleitsätze basierend auf ihren Erfahrungen der vergangenen Woche.",
+        "results": "Resultate"
+    },
+    "dashboard" : {
+        "viewGoals" : "Meine Verhaltensleitsätze ansehen",
+        "lighthoues?" : "Was sind Leuchttürme?",
+        "lighthouses" : "Leuchttürme",
+        "newContents" : "Neue Beiträge",
+        "weeklyOverview": "Wöchentlicher Überblick"
+    },
+    "languages": {
+        "en": "English",
+        "de": "Deutsch",
+        "languageSetting": "Spracheinstellung"
+    },
+    "latestScore": "Letzter Wert",
+    "leadership": "Führungskraft",
+    "loading": "Ladet",
+    "myColors": {
+        "categories": {
+            "openSystems": "Systeme öffnen",
+            "showVision": "Sinnorientierung ermöglichen",
+            "embraceBalance": "Balance anstreben",
+            "embraceOrder": "Ordnung herstellen",
+            "assureQuality": "Qualität sichern",
+            "showProfessionalDiscipline": "Professionelle Disziplin zeigen",
+            "maintainGoodRelationships": "Gute Beziehungen pflegen",
+            "createIntegratingEnvironment": "Einbindende Atmosphäre schaffen",
+            "supportOthers": "Andere unterstützen",
+            "actPragmatically": "Pragmatisch agieren",
+            "wantinToWin": "Gewinnen wollen",
+            "actMarketAndCustomerOriented": "Markt- und kundenorientiert handeln",
+            "buildOnExperience": "Auf Erfahrung aufbauen",
+            "strengthenCommunity": "Gemeinschaft stärken",
+            "showLoyality": "Loyalität leben",
+            "showDetermination": "Entschlossenheit zeigen",
+            "actFast": "Schnell handeln",
+            "searchConflicts": "Konflikten begegnen",
+            "wantingToUnderstand": "Verstehen wollen",
+            "embraceDiscourse": "Diskurs fördern",
+            "learnContinously": "Stetig lernen"
+        },
+        "exporting": "Dein Profil wird exportiert",
+        "fiveFavorites": "Meine fünf Favoriten",
+        "infoWidgetTitle": "Was ist \"My Colors\"?",
+        "infoText": "My Colors macht sichtbar, mit welchen Culture Map Farben du die Unternehmenskultur durch dein Verhalten prägst. So kannst du Kultur gezielt gestalten.",
+        "profile": "Mein Profil",
+        "profileExportTitle": "Mein My Colors Profil",
+        "surveyDescription": "Dein persönliches My Colors Profil."
+    },
+    "nextSurvey": "nächste Survey",
+    "nextWeek": "nächste Woche",
+    "nextMonth": "nächstes Monat",
+    "noDataHint": {
+        "notEnoughData": "Nicht ausreichend Daten vorhanden."
+    },
+    "note": "Notiz",
+    "numberInput": {
+        "applies": "Trifft zu",
+        "notApplies": "Trifft nicht zu"
+    },
+    "progress": {
+        "completed": "Beantwortet",
+        "open": "Offen",
+        "progress": "Fortschritt"
+    },
+    "question": "Frage",
+    "questions": "Fragen",
+    "reports": {
+        "changeTitle": "Change",
+        "cultureVibeTitle": "Culture Vibe",
+        "lighthousesTitle": "Leuchttürme",
+        "employee-leadership": "Mitarbeiter – Führungskraft"
+    },
+    "scoreSummary": "Avg / Min / Max",
+    "selection": {
+        "unselected": "Unselektiert"
+    },
+    "sprint": {
+        "active": "Aktiv",
+        "finished": "Abgeschlossen"
+    },
+    "surveyInfo": {
+        "myColors": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old."
+    },
+    "survey": {
+        "closed": "Geschlossen",
+        "completed": "Abgeschlossen",
+        "confirmExit": "Sind Sie sich sicher, dass Sie den Fragebogen verlassen wollen? Ihre Antworten werden nicht gespeichert.",
+        "confirmExitWithLocalStorage": "Sind Sie sich sicher, dass Sie den Fragebogen verlassen wollen? Ihre Antworten werden nur auf diesem Gerät zwischengespeichert.",
+        "open": "Offen",
+        "expired": "Ausgelaufen",
+        "firstWeek": "1. Woche",
+        "firstMonth": "1. Monat"
+
+    },
+    "surveyScore": "Survey Score",
+    "surveyStatus": "Survey Status",
+    "surveysCompleted": "Survey abgeschlossen",
+    "table": {
+        "showChart": "Diagramm anzeigen",
+        "hideChart": "Diagramm schließen",
+        "showAnswers": "Antworten anzeigen",
+        "hideAnswers": "Antworten schließen"
+    },
+    "takeSurvey": "Survey starten",
+    "takeSurveyAgain" : "Survey nochmal ausfüllen",
+    "viewResult": "Ergebnisse ansehen",
+    "toast": {
+        "success": {
+            "passwordReset": "Passwort zurücksetzen Mail erfolgreich versendet.",
+            "survey": "Fragebogen erfolgreich gespeichert.",
+            "content": {
+                "create": "Das Erstellen eines neuen Beitrags war erfolgreich.",
+                "update": "Das Überarbeiten des Beitrags war erfolgreich.",
+                "download": "Das Herunterladen des Beitrags war erfolgreich."
+            }
+        },
+        "warning": {
+            "auth": "Login ist fehlgeschlagen. Bitte überprüfen Sie E-Mail und Passwort.",
+            "general": "Es ist etwas schief gelaufen. Bitte versuchen Sie es erneut.",
+            "passwordReset": "Passwort zurücksetzen fehlgeschlagen. Bitte versuchen Sie es erneut.",
+            "content": {
+                "download": "Das Herunterladen des Beitrags ist fehlgeschlagen.",
+                "create": "Das Erstellen eines neuen Beitrags ist fehlgeschlagen.",
+                "update": "Das Überarbeiten des Beitrags ist fehlgeschlagen.",
+                "upload": "Das Hochladen einer Datei ist fehlgeschlagen."
+            }
+        }
+    },
+    "date": {
+        "week": "Woche",
+        "monday": "Mo.",
+        "sunday": "So.",
+        "calendarWeek": "Kalender Woche"
+    }
+}

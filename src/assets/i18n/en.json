@@ -1,0 +1,261 @@
+{   
+    "auth": {
+        "email": "E-Mail",
+        "incompleteForm": "Please fill out all form fields.",
+        "incorrectCredentials": "E-Mail or password is invalid.",
+        "invalidEmail": "Invalid E-Mail adress.",
+        "login": "Login",
+        "logout": "Logout",
+        "password": "Password",
+        "resetPassword": "Reset password"
+    },
+    "available": "available",
+    "branches": {
+        "all": "All locations",
+        "bregenz": "Bregenz",
+        "dornbirn": "Dornbirn",
+        "stGallen": "St. Gallen",
+        "zurich": "Zurich"
+    },
+    "buttons": {
+        "back": "Back",
+        "filter": "Filter",
+        "next": "Next",
+        "submitSurvey": "Submit survey",
+        "submitGoals": "Submit goals",
+        "submitColors": "Save colors"
+    },
+    "change": {
+        "infoText": "Change survey info text.",
+        "infoWidgetTitle": "What is the change survey?",
+        "surveyDescription": "Rate the questions of the change survey based on your perception of the past month.",
+        "results": "Results"
+    },
+    "content": {
+        "noContent": "No Content at the moment",
+        "noContentDescription": "There are no Contents at the moment. They will be added in the future.",
+        "admin": "Content Management",
+        "description": "Description",
+        "category": "Category",
+        "type": "Type",
+        "title": "Title",
+        "link": "Link",
+        "imageUrl": "Content Image",
+        "attachment": "Document",
+        "documents": "Documents",
+        "download": "Download",
+        "links": "Links",
+        "open": "Open",
+        "add": "Create",
+        "update": "Update",
+        "cancle": "Cancle",
+        "onCancle": "Do you really want to end editing without saving?",
+        "delete": "Delete",
+        "edit": "Edit",
+        "newContent": "New Content",
+        "editAttachment":"Update document",
+        "addAttachment": "Add document",
+        "addImage": "Add image",
+        "editImage": "Update image",
+        "confirmDelete": "Do you really want to delete this content?",
+        "createdAt" : "Date",
+        "categories": {
+            "document": "Document",
+            "link": "Link"
+        },
+        "validation": {
+            "noType": "Please choose one type.",
+            "noCategory": "Please choose one category",
+            "noTitle": "Please fill in a title.",
+            "noDescription": "Please fill in a description.",
+            "noLinkOrAttachment": "You have to add a document or an external link."
+
+        },
+        "types": {
+            "pdf": "PDF",
+            "word": "Word",
+            "powerpoint": "Power Point",
+            "excel": "Excel",
+            "blog": "Blog",
+            "video": "Video"
+        }
+    },
+    "color": "Color",
+    "colors": {
+        "orange": "Orange",
+        "yellow": "Yellow",
+        "green": "Green",
+        "aqua": "Aqua",
+        "blue": "Blue",
+        "purple": "Purple",
+        "red": "Red",
+        "orangeBehavior": "Orange behavior",
+        "yellowBehavior": "Yellow behavior",
+        "greenBehavior": "Green behavior",
+        "aquaBehavior": "Aqua behavior",
+        "blueBehavior": "Blue behavior",
+        "purpleBehavior": "Purple behavior",
+        "redBehavior": "Red behavior",
+        "redBehaviorExamples": "Erfolg, Wettbewerb, Opportunitäten, Pragmatismus, Taktik",
+        "orangeBehaviorExamples": "Erfolg, Wettbewerb, Opportunitäten, Pragmatismus, Taktik",
+        "yellowBehaviorExamples": "Erfolg, Wettbewerb, Opportunitäten, Pragmatismus, Taktik",
+        "greenBehaviorExamples": "Erfolg, Wettbewerb, Opportunitäten, Pragmatismus, Taktik",
+        "aquaBehaviorExamples": "Erfolg, Wettbewerb, Opportunitäten, Pragmatismus, Taktik",
+        "blueBehaviorExamples": "Erfolg, Wettbewerb, Opportunitäten, Pragmatismus, Taktik",
+        "purpleBehaviorExamples": "Erfolg, Wettbewerb, Opportunitäten, Pragmatismus, Taktik"
+    },
+    "cultureVibe": {
+        "infoText": "Culture Vibe Info Text.",
+        "infoWidgetTitle": "What is Culture Vibe?",
+        "selectColors": "Select colors",
+        "surveyDescription": "Select the 3 most dominant colors from the culture map based on your perception of the past week.",
+        "results": "Results"
+    },
+    "departments": {
+        "all": "All departments",
+        "accounting": "Accounting",
+        "humanResources": "Human resources",
+        "sales": "Sales",
+        "marketing": "Marketing"
+    },
+    "employee": "Employee",
+    "features": {
+        "home": "Home",
+        "reports": "Reports",
+        "change": "Change",
+        "changeSurvey": "Change survey",
+        "content": "Content",
+        "goals": "Goals",
+        "goalsSurvey": "Goals Survey",
+        "selectGoals": "Select goals",
+        "cultureVibe": "Culture Vibe",
+        "myColors": "MyColors",
+        "myColorsSurvey": "MyColors Survey",
+        "myProfile": "My Profile",
+        "admin": "Admin",
+        "contentForm": "Content Form"
+    },
+    "export": "Export",
+    "forms": {
+        "typeHere": "Type here",
+        "addNote": "Add note"
+    },
+    "info": "Info",
+    "goals": {
+        "infoText": "Goals survey info text.",
+        "infoWidgetTitle": "What are goals?",
+        "goalSelectorInfoText": "What do you plan to improve? We will create a survey based on your answers. You can select up to 6 behavior goals, 1 to 2 per color.",
+        "numberOfGoalsError": "You cannot select more than 6 goals.",
+        "numberOfGoalsPerColorError": "You need to select 1 to 2 goals per color.",
+        "selection": "Selection",
+        "sprintTitle": "Sprint {{sprint}} – Week {{week}}",
+        "surveyDescription": "Rate your individual goals based on your perception of the past week.",
+        "results": "Results"
+    },
+    "dashboard" : {
+        "viewGoals" : "View Goals",
+        "lighthoues?" : "What are lighthouses?",
+        "lighthouses" : "Lighthouses",
+        "newContents" : "New Contents",
+        "weeklyOverview": "Weekly Overview"
+    },
+    "languages": {
+        "en": "English",
+        "de": "Deutsch",
+        "languageSetting": "Language setting"
+    },
+    "latestScore": "Latest score",
+    "leadership": "Leadership",
+    "loading": "Loading",
+    "myColors": {
+        "categories": {},
+        "exporting": "Your profile will be exported",
+        "fiveFavorites": "Five favorites",
+        "infoWidgetTitle": "What is \"My Colors\"?",
+        "profile": "Profile",
+        "surveyDescription": "[English] My Colors macht sichtbar, mit welchen Farben einzelne Personen eine Kultur durch ihr Verhalten prägen."
+    },
+    "nextSurvey": "next survey",
+    "nextWeek": "next week",
+    "nextMonth": "next month",
+    "noDataHint": {
+        "notEnoughData": "Not enough data available."
+    },
+    "note": "Note",
+    "numberInput": {
+        "applies": "Applies",
+        "notApplies": "Does not apply"
+    },
+    "progress": {
+        "completed": "Beantwortet",
+        "open": "Offen",
+        "progress": "Progress"
+    },
+    "question": "Question",
+    "questions": "Questions",
+    "reports": {
+        "changeTitle": "Change",
+        "cultureVibeTitle": "Culture Vibe",
+        "lighthousesTitle": "Lighthouses",
+        "employee-leadership": "Employee – Leadership"
+    },
+    "scoreSummary": "Avg / Min / Max",
+    "selection": {
+        "unselected": "Unselected"
+    },
+    "sprint": {
+        "active": "Active",
+        "finished": "Finished"
+    },
+    "surveyInfo": {
+        "myColors": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old."
+    },
+    "survey": {
+        "closed": "Closed",
+        "completed": "Completed",
+        "confirmExit": "Are you sure you want to leave the survey? Your answers will not be saved.",
+        "confirmExitWithLocalStorage": "Are you sure you want to leave the survey? Your answers will only be temporarily saved on this device.",
+        "open": "Open",
+        "firstWeek": "1. Week",
+        "firstMonth": "1. Month"
+    },
+    "surveyScore": "Survey Score",
+    "surveyStatus": "Survey Status",
+    "surveysCompleted": "Surveys completed",
+    "table": {
+        "showChart": "Show chart",
+        "hideChart": "Hide chart"
+    },
+    "takeSurvey": "Start survey",
+    "takeSurveyAgain" : "Start survey again",
+    "viewResult": "View Results",
+    "toast": {
+        "success": {
+            "passwordReset": "Password reset mail successfully sent.",
+            "survey": "Survey saved successfully.",
+            "content": {
+                "create": "Creating the content was successfull.",
+                "update": "Updating the content was successfull",
+                "download": "Downloading the content was successfull."
+            }
+        },
+        "warning": {
+            "auth": "Login failed. Please check E-Mail and password.",
+            "general": "Something went wrong. Please try again.",
+            "passwordReset": "Failed to reset password. Please try again.",
+            "cpntent": {
+                "download": "Failed to download content.",
+                "create": "An Error has occurred while creating a content.",
+                "update": "An Error has occurred while updating a content.",
+                "upload": "Das Hochladen einer Datei ist fehlgeschlagen."
+            }
+        }
+    },
+    "date" : {
+        "week": "Week",
+        "monday": "Mon.",
+        "sunday": "Sun.",
+        "calendarWeek": "Calendar Week"
+
+    }
+}

@@ -1,0 +1,214 @@
+@import 'functions/colors';
+@import 'functions/typography';
+@import 'functions/metrics';
+@import 'color-palette/light-theme-palette';
+
+// ########## COLORS ##########
+
+$ca-color-brand: var(--ca-color-brand, getThemeColor($light-theme-palette, brand));
+$ca-color-brand-button: var(
+    --ca-color-brand-button,
+    getThemeColor($light-theme-palette, brand-button)
+);
+$ca-color-brand-dark: var(--ca-color-brand-dark, getThemeColor($light-theme-palette, brand-dark));
+$ca-color-brand-contrast: var(
+    --ca-color-brand-contrast,
+    getThemeColor($light-theme-palette, brand-contrast)
+);
+
+$ca-color-foreground: var(--ca-color-foreground, getThemeColor($light-theme-palette, foreground));
+$ca-color-foreground-light-20: var(
+    --ca-color-foreground-light-20,
+    getThemeColor($light-theme-palette, foreground-light-20)
+);
+$ca-color-foreground-light-30: var(
+    --ca-color-foreground-light-30,
+    getThemeColor($light-theme-palette, foreground-light-30)
+);
+$ca-color-foreground-light-40: var(
+    --ca-color-foreground-light-40,
+    getThemeColor($light-theme-palette, foreground-light-40)
+);
+$ca-color-foreground-light-50: var(
+    --ca-color-foreground-light-50,
+    getThemeColor($light-theme-palette, foreground-light-50)
+);
+$ca-color-foreground-light-60: var(
+    --ca-color-foreground-light-60,
+    getThemeColor($light-theme-palette, foreground-light-60)
+);
+$ca-color-foreground-light-70: var(
+    --ca-color-foreground-light-70,
+    getThemeColor($light-theme-palette, foreground-light-70)
+);
+$ca-color-foreground-light-80: var(
+    --ca-color-foreground-light-80,
+    getThemeColor($light-theme-palette, foreground-light-80)
+);
+$ca-color-foreground-light-90: var(
+    --ca-color-foreground-light-90,
+    getThemeColor($light-theme-palette, foreground-light-90)
+);
+
+$ca-color-background: var(--ca-color-background, getThemeColor($light-theme-palette, background));
+$ca-color-background-dark: var(
+    --ca-color-background-dark,
+    getThemeColor($light-theme-palette, background-dark)
+);
+
+$ca-color-state-error: var(
+    --ca-color-state-error,
+    getThemeColor($light-theme-palette, state-error)
+);
+$ca-color-state-success: var(
+    --ca-color-state-success,
+    getThemeColor($light-theme-palette, state-success)
+);
+
+$ca-color-state-orange: var(--ca-color-state-orange, getThemeColor($light-theme-palette, orange));
+$ca-color-state-yellow: var(--ca-color-state-yellow, getThemeColor($light-theme-palette, yellow));
+$ca-color-state-green: var(--ca-color-state-green, getThemeColor($light-theme-palette, green));
+$ca-color-state-aqua: var(--ca-color-state-aqua, getThemeColor($light-theme-palette, aqua));
+$ca-color-state-blue: var(--ca-color-state-blue, getThemeColor($light-theme-palette, blue));
+$ca-color-state-purple: var(--ca-color-state-purple, getThemeColor($light-theme-palette, purple));
+$ca-color-state-red: var(--ca-color-state-red, getThemeColor($light-theme-palette, red));
+
+$button-text-color: hsl(0, 0%, 100%);
+$box-shadow-color: rgba(99, 99, 99, 0.2);
+
+$box-shadow: $box-shadow-color 0px 2px 8px 0px;
+
+$darken-percentage: 10%;
+$lighten-percentage: 10%;
+
+// ########## TYPOGRAPHY ##########
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@font-face {
+    font-family: SharpSansNo1;
+    font-weight: 300;
+    src: url('../assets/fonts/SharpSans-No1-Book.otf') format('opentype');
+}
+
+@font-face {
+    font-family: SharpSansNo1;
+    font-weight: 400;
+    src: url('../assets/fonts/SharpSans-No1-Medium.otf') format('opentype');
+}
+
+@font-face {
+    font-family: SharpSansNo1;
+    font-weight: 500;
+    src: url('../assets/fonts/SharpSans-No1-Semibold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: SharpSansNo1;
+    font-weight: 700;
+    src: url('../assets/fonts/SharpSans-No1-Bold.otf') format('opentype');
+}
+
+$font-family: 'Poppins, Helvetica, sans-serif';
+$font-family-headline: 'Sharp Sans No1, Helvetica, sans-serif';
+$html-font-size: 16px;
+$base-font-size: 15px;
+$base-font-size-mobile: 14px;
+
+$typography: (
+    // Default
+    default: _typography-config(toRelativeUnit($base-font-size), normal, 400, $font-family, normal),
+    default-semi-bold:
+        _typography-config(toRelativeUnit($base-font-size), normal, 500, $font-family, normal),
+    default-bold:
+        _typography-config(toRelativeUnit($base-font-size), normal, 700, $font-family, normal),
+    // Headlines
+    h1: _typography-config(toRelativeUnit(28px), normal, 600, $font-family-headline, normal),
+    h1-light: _typography-config(toRelativeUnit(28px), normal, 300, $font-family-headline, normal),
+    h1-bold: _typography-config(toRelativeUnit(28px), normal, 700, $font-family-headline, normal),
+    h2: _typography-config(toRelativeUnit(24px), normal, 600, $font-family-headline, normal),
+    h2-light: _typography-config(toRelativeUnit(24px), normal, 300, $font-family-headline, normal),
+    h2-bold: _typography-config(toRelativeUnit(24px), normal, 700, $font-family-headline, normal),
+    h3: _typography-config(toRelativeUnit(20px), normal, 600, $font-family-headline, normal),
+    h3-light: _typography-config(toRelativeUnit(20px), normal, 300, $font-family-headline, normal),
+    h3-bold: _typography-config(toRelativeUnit(20px), normal, 700, $font-family-headline, normal),
+    h4: _typography-config(toRelativeUnit(18px), normal, 600, $font-family-headline, normal),
+    h4-light: _typography-config(toRelativeUnit(18px), normal, 300, $font-family-headline, normal),
+    h4-bold: _typography-config(toRelativeUnit(18px), normal, 700, $font-family-headline, normal),
+    // H5 -> meta
+    h6: _typography-config(toRelativeUnit(12px), normal, 600, $font-family-headline, normal),
+    h6-light: _typography-config(toRelativeUnit(12px), normal, 300, $font-family-headline, normal),
+    h6-bold: _typography-config(toRelativeUnit(12px), normal, 700, $font-family-headline, normal),
+    // Special
+    highlight: _typography-config(toRelativeUnit(28px), normal, 700, $font-family, normal),
+    highlight-small: _typography-config(toRelativeUnit(20px), normal, 600, $font-family, normal),
+    meta: _typography-config(toRelativeUnit(14px), normal, 600, $font-family, toRelativeUnit(1px)),
+    caption: _typography-config(toRelativeUnit(12px), normal, 400, $font-family, normal)
+);
+
+// ########## METRICS ##########
+
+$spacing-xs: toRelativeUnit(4px);
+$spacing-sm: toRelativeUnit(8px);
+$spacing-md: toRelativeUnit(12px);
+$spacing-lg: toRelativeUnit(16px);
+$spacing-xl: toRelativeUnit(32px);
+
+$feature-container-padding: $spacing-xl;
+$mobile-feature-container-padding: $spacing-lg;
+
+$mobile-margin: $spacing-md;
+
+$border-radius: toRelativeUnit(0px);
+
+$form-control-height: toRelativeUnit(40px);
+
+$button-height: toRelativeUnit(40px);
+$button-border-width: toRelativeUnit(1px);
+
+$transition-duration: 0.2s;
+$transition-style: 'ease-in-out';
+
+$app-height: var(--app-height);
+$nav-width: toRelativeUnit(350px);
+$toolbar-height: toRelativeUnit(80px);
+
+// ########## RESPONSIVE ##########
+$size-xs: 480px;
+$size-sm: 600px;
+$size-md: 960px;
+$size-lg: 1280px;
+$size-xl: 1920px;
+
+$responsive-breakpoint: $size-md !default;
+
+// The breakpoints define the following areas:
+// XS <= 480px < SMALL <= 600px < MEDIUM <= 960px < LARGE <= 1200 < X-LARGE <= 1800 < XX-LARGE
+
+$breakpoint-xs-up: $size-xs + 1px;
+$breakpoint-sm-up: $size-sm + 1px;
+$breakpoint-md-up: $size-md + 1px;
+$breakpoint-lg-up: $size-lg + 1px;
+$breakpoint-xl-up: $size-xl + 1px;
+
+$mediaquery-xs-down: 'only screen and (max-width : #{$size-xs})';
+
+$mediaquery-sm-up: 'only screen and (min-width : #{$breakpoint-xs-up})';
+$mediaquery-sm-down: 'only screen and (max-width : #{$size-sm})';
+$mediaquery-sm-only: 'only screen and (min-width : #{$breakpoint-xs-up}) and (max-width : #{$size-sm})';
+
+$mediaquery-md-up: 'only screen and (min-width : #{$breakpoint-sm-up})';
+$mediaquery-md-down: 'only screen and (max-width : #{$size-md})';
+$mediaquery-md-only: 'only screen and (min-width : #{$breakpoint-sm-up}) and (max-width : #{$size-md})';
+
+$mediaquery-lg-up: 'only screen and (min-width : #{$breakpoint-md-up})';
+$mediaquery-lg-down: 'only screen and (max-width : #{$size-lg})';
+$mediaquery-lg-only: 'only screen and (min-width : #{$breakpoint-md-up}) and (max-width : #{$size-lg})';
+
+$mediaquery-xl-up: 'only screen and (min-width : #{$breakpoint-lg-up})';
+$mediaquery-xl-down: 'only screen and (max-width : #{$size-xl})';
+$mediaquery-xl-only: 'only screen and (min-width : #{$breakpoint-lg-up}) and (max-width : #{$size-xl})';
+
+$mediaquery-xxl-up: 'only screen and (min-width : #{$breakpoint-xl-up})';
+
+$mediaquery-hover-devices: '(hover: hover) and (pointer: fine)';

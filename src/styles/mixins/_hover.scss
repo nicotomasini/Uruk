@@ -1,0 +1,4 @@
+@mixin transition-styling($property) {
+    -webkit-transition: #{$property} #{$transition-duration} #{$transition-style};
+    transition: #{$property} #{$transition-duration} #{$transition-style};
+}

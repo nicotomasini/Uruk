@@ -1,0 +1,85 @@
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+
+    font-size: $base-font-size;
+
+    @media #{$mediaquery-sm-down} {
+        font-size: $base-font-size-mobile;
+    }
+}
+
+body {
+    @include addTheme($light-theme-palette);
+    @include text-format(default);
+
+    background-color: $ca-color-background;
+    color: $ca-color-foreground;
+
+    overflow-x: hidden;
+    text-rendering: optimizeLegibility;
+}
+
+a {
+    color: $ca-color-brand;
+    outline: none;
+    text-decoration: none;
+    cursor: pointer;
+    @include transition-styling('color');
+
+    &:focus,
+    &:hover,
+    &:active,
+    &.active {
+        text-decoration: underline;
+    }
+
+    &:not(.icon-only) fa-icon {
+        margin-right: $spacing-sm;
+    }
+
+    &.arrow-link {
+        font-weight: 500;
+        text-decoration: underline;
+        fa-icon {
+            margin-left: $spacing-sm;
+        }
+    }
+}
+
+.row-container {
+    margin: 0 -#{$spacing-lg};
+    flex-wrap: wrap;
+
+    > div {
+        padding: 0 $spacing-lg;
+        margin-bottom: $spacing-xl;
+    }
+
+    .row-header {
+        margin-bottom: $spacing-lg;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .row-title {
+            margin-right: $spacing-lg;
+        }
+    }
+}
+
+.card {
+    padding: $spacing-xl;
+    background-color: $ca-color-background;
+    height: 100%;
+
+    @media #{$mediaquery-md-down} {
+        padding: $spacing-lg;
+    }
+}

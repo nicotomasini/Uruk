@@ -1,0 +1,24 @@
+@function _typography-config($font-size, $line-height, $font-weight, $font-family, $letter-spacing) {
+    @return (font-size: $font-size, line-height: $line-height, font-weight: $font-weight, font-family: $font-family, letter-spacing: $letter-spacing);
+}
+
+@function font-size($level) {
+    @return map-get(map-get($typography, $level), font-size);
+}
+
+@function line-height($level) {
+    @return map-get(map-get($typography, $level), line-height);
+}
+
+@function font-weight($level) {
+    @return map-get(map-get($typography, $level), font-weight);
+}
+
+@function letter-spacing($level) {
+    @return map-get(map-get($typography, $level), letter-spacing);
+}
+
+@function font-family($level) {
+    $font-family: map-get(map-get($typography, $level), font-family);
+    @return if(type-of($font-family) == string, unquote($font-family), $font-family);
+}

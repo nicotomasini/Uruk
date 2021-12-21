@@ -1,0 +1,73 @@
+button, .btn {
+    @include text-format(default);
+    transition: background #{$transition-duration}, border #{$transition-duration}, box-shadow #{$transition-duration}, color #{$transition-duration};
+    appearance: none;
+    background: $ca-color-brand-button;
+    border: $button-border-width solid $ca-color-brand-button;
+    border-radius: $border-radius;
+    color: $ca-color-background;
+    cursor: pointer;
+    display: inline-block;
+    height: $button-height;
+    outline: none;
+    padding: 0 $spacing-xl;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    &:focus {
+      @include control-shadow();
+    }
+    &:focus,
+    &:hover {
+      background: $ca-color-brand-button;
+      border-color: $ca-color-brand-button;
+      color: $ca-color-background;
+      text-decoration: none;
+    }
+    &:active,
+    &.active {
+      background: $ca-color-brand-button;
+      border-color: $ca-color-brand-button;
+      color: $ca-color-background;
+      text-decoration: none;
+      &.loading {
+        &::after {
+          border-bottom-color: $ca-color-brand-button;
+          border-left-color: $ca-color-brand-button;
+        }
+      }
+    }
+    &[disabled],
+    &:disabled,
+    &.disabled {
+      cursor: default;
+      opacity: .5;
+      pointer-events: none;
+    }
+
+    &.btn-primary-outline {
+      background: transparent;
+      border-color: $ca-color-brand-button;
+      color: $ca-color-brand-button;
+      &:focus,
+      &:hover {
+        background: $ca-color-brand-button;
+        border-color: $ca-color-brand-button;
+        color: $ca-color-background;
+      }
+      &:active,
+      &.active {
+        background: $ca-color-brand-button;
+        border-color: $ca-color-brand-button;
+        color: $ca-color-background;
+      }
+      &.loading {
+        &::after {
+          border-bottom-color: $ca-color-brand-button;
+          border-left-color: $ca-color-brand-button;
+        }
+      }
+    }
+  }

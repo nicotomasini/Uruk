@@ -1,0 +1,29 @@
+$light-theme-palette: (
+    "brand": #a78149,
+    "brand-button": #000000,
+    "brand-contrast": hsl(0, 0%, 100%),
+
+    "foreground": hsl(0, 0%, 0%),
+    "foreground-light-20": hsl(0, 0%, 20%),
+    "foreground-light-30": hsl(0, 0%, 30%),
+    "foreground-light-40": hsl(0, 0%, 40%),
+    "foreground-light-50": hsl(0, 0%, 50%),
+    "foreground-light-60": hsl(0, 0%, 60%),
+    "foreground-light-70": hsl(0, 0%, 70%),
+    "foreground-light-80": hsl(0, 0%, 80%),
+    "foreground-light-90": hsl(0, 0%, 90%),
+
+    "state-error": hsl(0, 100%, 50%),
+    "state-success": hsl(100, 100%, 30%),
+
+    "background": hsl(0, 0%, 100%),
+    "background-dark": hsl(218, 57%, 97%),
+
+    "state-orange": #f59324,
+    "state-yellow": #fae714,
+    "state-green": #46af52,
+    "state-aqua": #70cae6,
+    "state-blue": #1061ad,
+    "state-purple": #8d3088,
+    "state-red": #e61949,
+);

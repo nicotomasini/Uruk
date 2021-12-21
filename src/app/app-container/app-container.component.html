@@ -1,0 +1,11 @@
+<div class="app-container" [class.nav-open]="showNav">
+    <div class="nav-container">
+        <ca-nav [navSections]="navSections"></ca-nav>
+    </div>
+    <div class="page-container">
+        <ca-toolbar></ca-toolbar>
+        <div class="feature-container">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>
