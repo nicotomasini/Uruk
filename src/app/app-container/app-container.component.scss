@@ -1,0 +1,55 @@
+@import 'variables';
+@import 'mixins/typography';
+
+.app-container {
+    position: relative;
+    height: $app-height;
+    display: flex;
+
+    .nav-container {
+        width: $nav-width;
+        height: 100%;
+        background-color: $ca-color-background;
+        z-index: 10;
+    }
+
+    .page-container {
+        height: 100%;
+        width: calc(100% - #{$nav-width});
+
+        .feature-container {
+            background-color: $ca-color-background-dark;
+            height: calc(100% - #{$toolbar-height});
+            padding: $feature-container-padding;
+            overflow-y: auto;
+        }
+    }
+
+    @media #{$mediaquery-md-down} {
+        .page-container {
+            transform: translateX(0);
+            width: 100%;
+            transition: all 0.5s ease;
+
+            .feature-container {
+                padding: $mobile-feature-container-padding;
+            }
+        }
+
+        .nav-container {
+            position: fixed;
+            left: 0;
+            top: 0;
+            transform: translateX(-#{$nav-width});
+            transition: all 0.5s ease;
+        }
+        &.nav-open {
+            .page-container {
+                transform: translateX($nav-width);
+            }
+            .nav-container {
+                transform: translateX(0);
+            }
+        }
+    }
+}

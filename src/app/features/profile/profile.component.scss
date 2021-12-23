@@ -1,0 +1,22 @@
+@import 'variables';
+
+.profile-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10vh;
+
+    .avatar {
+        font-size: toRelativeUnit(64px);
+        color: $ca-color-foreground-light-50;
+    }
+
+    .username {
+        margin-bottom: $spacing-xs;
+    }
+
+    .reset-password {
+        margin-bottom: $spacing-xl;
+    }
+}

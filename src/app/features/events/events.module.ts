@@ -2,18 +2,18 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
-import { MyColorsComponent } from './mycolors.component';
+import { EventsComponent } from './events.component';
 
 const routes: Routes = [
     {
         path: '',
-        component: MyColorsComponent,
-        data: { breadcrumb: 'features.myColors' },
+        component: EventsComponent,
+        data: { breadcrumb: 'features.events' },
     },
 ];
 
 @NgModule({
-    declarations: [MyColorsComponent],
+    declarations: [EventsComponent],
     imports: [CommonModule, HttpClientModule, RouterModule.forChild(routes)],
 })
-export class MycolorsModule {}
+export class EventsModule {}

@@ -1,13 +1,14 @@
 import { Injectable } from '@angular/core';
 import { ActivatedRouteSnapshot, CanActivate, CanLoad, Route, Router, UrlTree } from '@angular/router';
 import { Observable } from 'rxjs';
+import { ProjectService } from '../project/project.service';
 
 @Injectable({
     providedIn: 'root',
 })
 export class FeaturesGuard implements CanActivate, CanLoad {
     admin = true;
-    constructor(private router: Router) {}
+    constructor(private router: Router, private projectService: ProjectService) {}
 
     canActivate(route: ActivatedRouteSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
         const path = route.routeConfig?.path;
@@ -16,7 +17,7 @@ export class FeaturesGuard implements CanActivate, CanLoad {
             return true;
         }
 
-        this.router.navigate(['/profile']);
+        this.router.navigate(['/home']);
         return false;
     }
 
@@ -27,12 +28,13 @@ export class FeaturesGuard implements CanActivate, CanLoad {
             return true;
         }
 
-        this.router.navigate(['/profile']);
+        this.router.navigate(['/home']);
         return false;
     }
 
     private isEnabled(path: string) {
-        /*  const features = this.tenantService.config?.features;
+        const features = this.projectService.config?.features;
+        console.log(this.projectService.config);
         const enabledFeatures = Object.keys(features)
             .filter((key) => features[key] === true)
             .map((key) => key.toLowerCase());
@@ -42,6 +44,6 @@ export class FeaturesGuard implements CanActivate, CanLoad {
             return true;
         }
 
-        return false; */
+        return false;
     }
 }

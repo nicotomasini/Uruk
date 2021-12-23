@@ -1,0 +1,41 @@
+@import 'variables';
+
+.profiles {
+    z-index: 1;
+    .profile {
+        .profile-header {
+            margin-bottom: $spacing-md;
+
+            .profile-title {
+                margin-right: $spacing-lg;
+            }
+        }
+
+        .pawn-bg {
+            background-image: url('../../../assets/images/mycolors_pawn.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+    }
+}
+
+::ng-deep .tooltip-container {
+    padding: $spacing-sm;
+
+    .value {
+        font-weight: 600;
+    }
+}
+
+.info {
+    img {
+        margin-right: $spacing-xl;
+        object-fit: contain;
+    }
+}
+
+.mobile-export {
+    display: inline-flex;
+    align-items: center;
+}

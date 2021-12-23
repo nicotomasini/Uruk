@@ -26,11 +26,12 @@ export class AppContainerComponent implements OnInit {
 
     ngOnInit() {
         // eingelogt überprüfen
-
         this.config = this.projectService.config;
         if (this.config.entryRoute) {
             this.router.navigate([`/${this.config.entryRoute}`]);
+            console.log('nav');
         }
+        this.initNav();
 
         this.setupTranslation();
 
@@ -41,9 +42,8 @@ export class AppContainerComponent implements OnInit {
 
     private setupTranslation() {
         this.translate.addLangs(['de', 'en']);
-        // this language will be used as a fallback when a translation isn't found in the current language
-        /*   this.translate.setDefaultLang(this.config.defaultLanguage || 'de');
-        this.translate.use(this.config.defaultLanguage || 'de'); */
+        this.translate.setDefaultLang(this.config.defaultLanguage || 'de');
+        this.translate.use(this.config.defaultLanguage || 'de');
     }
 
     private initNav() {
@@ -63,66 +63,14 @@ export class AppContainerComponent implements OnInit {
             disabled: this.config.features?.home === false,
         });
 
-        /*    section1Items.push({
-            title: 'reports',
-            faIcon: {
-                iconName: 'user-chart',
-                prefix: 'fal',
-            },
-            route: '/reports',
-            disabled: this.config.features?.reports === false,
-        });
-
-        section1Items.push({
-            title: 'content',
-            faIcon: {
-                iconName: 'file-alt',
-                prefix: 'fal',
-            },
-            route: '/content',
-            disabled: this.config.features?.content === false,
-        }); */
-
-        //secetion2 = Einloggen
-
         section2Items.push({
-            title: 'myColors',
+            title: 'events',
             faIcon: {
                 iconName: 'tasks-alt',
                 prefix: 'fal',
             },
-            route: '/mycolors',
-            disabled: this.config.features?.myColors === false,
-        });
-
-        section2Items.push({
-            title: 'goals',
-            faIcon: {
-                iconName: 'bullseye-arrow',
-                prefix: 'fal',
-            },
-            route: '/goals',
-            disabled: this.config.features?.goals === false,
-        });
-
-        section2Items.push({
-            title: 'cultureVibe',
-            faIcon: {
-                iconName: 'plus-hexagon',
-                prefix: 'fal',
-            },
-            route: '/culture-vibe',
-            disabled: this.config.features?.cultureVibe === false,
-        });
-
-        section2Items.push({
-            title: 'change',
-            faIcon: {
-                iconName: 'poll-people',
-                prefix: 'fal',
-            },
-            route: '/change',
-            disabled: this.config.features?.change === false,
+            route: '/events',
+            disabled: this.config.features?.events === false,
         });
 
         section3Items.push({
@@ -134,18 +82,6 @@ export class AppContainerComponent implements OnInit {
             route: '/profile',
             disabled: false,
         });
-
-        if (this.pmo) {
-            section3Items.push({
-                title: 'admin',
-                faIcon: {
-                    iconName: 'tools',
-                    prefix: 'fal',
-                },
-                route: '/admin',
-                disabled: this.config.features?.admin === false,
-            });
-        }
 
         this.navSections = [
             {
@@ -161,5 +97,6 @@ export class AppContainerComponent implements OnInit {
                 items: section3Items,
             },
         ];
+        console.log('this,init');
     }
 }

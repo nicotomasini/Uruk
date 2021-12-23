@@ -6,6 +6,6 @@ import { take } from 'rxjs/operators';
 @Injectable({
     providedIn: 'root',
 })
-export class MyColorsService {
+export class EventsService {
     constructor(private http: HttpClient) {}
 }

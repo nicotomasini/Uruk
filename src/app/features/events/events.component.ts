@@ -6,14 +6,14 @@ import { ViewService } from '../../view-service/view.service';
 import { BaseFeatureComponent } from '../base-feature.component';
 
 @Component({
-    selector: 'ca-mycolors',
-    templateUrl: './mycolors.component.html',
-    styleUrls: ['./mycolors.component.scss'],
+    selector: 'ca-events',
+    templateUrl: './events.component.html',
+    styleUrls: ['./events.component.scss'],
 })
-export class MyColorsComponent extends BaseFeatureComponent implements OnInit {
+export class EventsComponent extends BaseFeatureComponent implements OnInit {
     protected get pageConfig(): IPageConfig {
         return {
-            title: 'myColors',
+            title: 'events',
         };
     }
 

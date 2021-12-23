@@ -21,10 +21,10 @@ const routes: Routes = [
                 data: { breadcrumb: 'home' },
             },
             {
-                path: 'mycolors',
-                loadChildren: () => import('./features/mycolors/mycolors.module').then((m) => m.MycolorsModule),
+                path: 'events',
+                loadChildren: () => import('./features/events/events.module').then((m) => m.EventsModule),
                 canLoad: [FeaturesGuard],
-                data: { breadcrumb: 'features.myColors' },
+                data: { breadcrumb: 'features.events' },
             },
             {
                 path: 'profile',

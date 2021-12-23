@@ -1,13 +1,13 @@
 {
     "version": "v1",
-    "logoUrl": "assets/logos/culture_app.svg",
+    "logoUrl": "assets/logos/Logo_Navbar.png",
     "brandColor": "#a78149",
     "buttonColor": "#000000",
     "defaultLanguage": "de",
     "showLanguageSwitch": true,
     "features": {
         "home": true,
-        "myColors": true
+        "events": true
     },
     "entryRoute": "home"
 }

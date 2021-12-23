@@ -1,0 +1,81 @@
+@import 'variables';
+@import 'mixins/typography';
+@import 'mixins/hover';
+
+#nav {
+    height: 100%;
+    border-right: 1px solid $ca-color-foreground-light-90;
+    box-shadow: 3px 0px 6px $box-shadow;
+
+    .logo-area {
+        height: $toolbar-height;
+        padding: $spacing-md $spacing-xl;
+        background-color: black;
+
+        img {
+            height: 100%;
+            max-width: 100%;
+        }
+    }
+
+    .nav-area {
+        display: flex;
+        flex-direction: column;
+
+        ul.nav-section {
+            padding: $spacing-md 0;
+            margin: 0;
+            position: relative;
+
+            &:before {
+                content: '';
+                display: block;
+                width: 90%;
+                height: 1px;
+                background-color: $ca-color-foreground-light-90;
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            li.nav-item {
+                height: toRelativeUnit(64px);
+                display: flex;
+                align-items: center;
+                padding-left: $spacing-xl;
+                cursor: pointer;
+                @include transition-styling(color);
+
+                &:hover,
+                &.active {
+                    color: $ca-color-brand;
+                }
+
+                &.active {
+                    border-right: 4px solid $ca-color-brand;
+                }
+
+                &.disabled {
+                    pointer-events: none;
+                    cursor: not-allowed;
+                    color: $ca-color-foreground-light-70;
+                }
+
+                .nav-item-icon {
+                    width: toRelativeUnit(32px);
+                    display: inline-flex;
+                    justify-content: center;
+                    font-size: toRelativeUnit(18px);
+                }
+
+                .nav-item-title {
+                    @include text-format(default);
+                    font-size: toRelativeUnit(20px);
+                    font-weight: 500;
+                    margin-left: $spacing-lg;
+                }
+            }
+        }
+    }
+}

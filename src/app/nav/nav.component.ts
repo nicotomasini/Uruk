@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { ProjectService } from '../project/project.service';
 import { ViewService } from '../view-service/view.service';
 import { INavSection } from './model/nav.interface';
 
@@ -13,10 +14,10 @@ export class NavComponent implements OnInit {
 
     public logoPath!: string;
 
-    constructor(private viewService: ViewService) {}
+    constructor(private viewService: ViewService, private projectService: ProjectService) {}
 
     ngOnInit(): void {
-        /*   this.logoPath = this.tenantService.config.logoUrl; */
+        this.logoPath = this.projectService.config.logoUrl;
     }
 
     public closeNav() {

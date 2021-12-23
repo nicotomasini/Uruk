@@ -1,4 +1,4 @@
-import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
+import { APP_INITIALIZER, CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -14,6 +14,8 @@ import { NavComponent } from './nav/nav.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { ProfileComponent } from './features/profile/profile.component';
 import { AppContainerComponent } from './app-container/app-container.component';
+import { configFactory } from './project.provider';
+import { ProjectService } from './project/project.service';
 
 export function HttpLoaderFactory(http: HttpClient) {
     return new TranslateHttpLoader(http);
@@ -38,7 +40,15 @@ export function HttpLoaderFactory(http: HttpClient) {
         SwiperModule,
     ],
     schemas: [CUSTOM_ELEMENTS_SCHEMA],
-    providers: [httpInterceptorProviders],
+    providers: [
+        httpInterceptorProviders,
+        {
+            provide: APP_INITIALIZER,
+            useFactory: configFactory,
+            deps: [ProjectService],
+            multi: true,
+        },
+    ],
     bootstrap: [AppComponent],
 })
 export class AppModule {}

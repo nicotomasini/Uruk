@@ -1,0 +1,55 @@
+@import 'variables';
+@import 'mixins/typography';
+@import 'swiper/scss';
+@import 'swiper/scss/navigation';
+
+.dashboard {
+    .weekly-overview {
+        .weekly-overview-header {
+            display: flex;
+            margin-bottom: $spacing-lg;
+
+            .weekly-overview-header-headline {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                flex-wrap: wrap;
+
+                h1 {
+                    padding-right: 16px;
+                }
+
+                h4 {
+                    padding-right: 16px;
+                    opacity: 0.5;
+                }
+            }
+            .weekly-overview-header-buttons {
+                display: flex;
+                flex-direction: row;
+                margin-left: auto;
+            }
+        }
+    }
+
+    .row-container .row-header {
+        .buttons-container {
+            margin-left: auto;
+        }
+    }
+
+    .buttons-container {
+        button,
+        button:hover,
+        button:active,
+        button:focus {
+            position: relative;
+            top: -4px;
+            padding: 0px;
+            padding-left: $spacing-lg;
+            color: black;
+            background: none;
+            border: none;
+        }
+    }
+}

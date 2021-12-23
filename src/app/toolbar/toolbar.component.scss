@@ -1,0 +1,31 @@
+@import 'variables';
+@import 'mixins/typography';
+
+.toolbar {
+    height: $toolbar-height;
+    width: 100%;
+    border-bottom: 1px solid $ca-color-foreground-light-90;
+    box-shadow: 0px 3px 6px $box-shadow-color;
+    display: flex;
+    align-items: center;
+    padding: 0 $spacing-xl;
+
+    .settings-area {
+        margin-left: auto;
+    }
+
+    .nav-toggle {
+        display: none;
+        margin-right: $spacing-xl;
+
+        fa-icon {
+            font-size: toRelativeUnit(24px);
+        }
+    }
+
+    @media #{$mediaquery-md-down} {
+        .nav-toggle {
+            display: block;
+        }
+    }
+}
